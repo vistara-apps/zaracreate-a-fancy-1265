@@ -26,6 +26,6 @@ jobs:
       with:
         context: .
         push: true
-        tags: registry.vistara.dev/${{ projectId }}:${{ env.TAG }}
+        tags: registry.vistara.dev/${ projectId }}:\$\{\{ env.TAG \}\}
         cache-from: type=gha
         cache-to: type=gha,mode=max
